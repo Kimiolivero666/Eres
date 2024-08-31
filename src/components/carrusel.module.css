@@ -1,0 +1,52 @@
+.carousel {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: auto;
+  }
+  
+  .carouselInner {
+    display: flex;
+    transition: transform 0.6s ease-in-out; /* Ajustado para coincidir con el tiempo en useEffect */
+  }
+  
+  .noTransition {
+    transition: none; /* Evita la transición abrupta durante el ajuste del índice */
+  }
+  
+  .carouselItem {
+    min-width: 100%;
+    height: auto;
+  }
+  
+  .carouselItem img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .carouselControl {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: var(--verde);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 1000;
+    transition: background 0.3s ease;
+  }
+  
+  .carouselControl:disabled {
+    background: rgba(0, 0, 0, 0.3);
+    cursor: not-allowed;
+  }
+  
+  .prev {
+    left: 10px;
+  }
+  
+  .next {
+    right: 10px;
+  }
+  

@@ -1,0 +1,31 @@
+.carrusel{
+    margin-top: 76px;
+}
+
+.descripcionEres{
+    margin-top: 7rem;
+}
+
+.bienvenida{
+    display: flex;
+    align-items: center;
+}
+
+.imagen{
+    height: auto;
+    width: 100%;
+}
+
+.titulo{
+    color: var(--gris);
+}
+
+.span{
+    color: var(--verde);
+}
+
+.parrafo{
+    color: var(--verde);
+    font-family: "Zen Kaku Gothic Antique", sans-serif;
+    margin-top: 5rem;
+}

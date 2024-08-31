@@ -1,0 +1,30 @@
+.tratamiento {
+    text-align: center;
+    margin-top: 6rem;
+}
+
+.imagen {
+    object-fit: cover;
+    width: 100%;
+    height: 70vh;
+}
+
+.titulo {
+    color: var(--gris);
+    margin-bottom: 3rem;
+    
+}
+
+.parrafo {
+    margin-top: 6rem;
+    margin-bottom: 4rem;
+    font-family: "Zen Kaku Gothic Antique", sans-serif;
+    color: var(--verde);
+    font-weight: 300;
+}
+
+.boton{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 5rem;
+}

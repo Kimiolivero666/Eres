@@ -1,0 +1,28 @@
+body {
+    font-family: "Zen Kaku Gothic Antique", sans-serif;
+  }
+
+  @font-face {
+    font-family: 'Carla Sans';
+    src: url('../../public/fonts/CarlaSans-Bold.otf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+  }
+  
+  .carlaSans {
+    font-family: 'Carla Sans', sans-serif;
+    font-weight: bold;
+  }
+  
+  :root{
+    --blanco: #FFF;
+    --verde:#7ca275;
+    --verdeClaro:#C2E3BF;
+    --gris:#757575;
+  }
+  
+  
+  
+  
+  
+  

@@ -7,13 +7,37 @@ import Turno from '@/lib/models/Turno';
 export async function GET(request: NextRequest) {
     try {
         await ConnectDB();
-        const turnos = await Turno.find({});
+
+        // Obtener los parámetros de paginación desde la consulta de la URL
+        const url = new URL(request.url);
+        const page = parseInt(url.searchParams.get('page') || '1', 10);
+        const limit = parseInt(url.searchParams.get('limit') || '10', 10);
+
+        // Calcular el número de documentos a omitir
+        const skip = (page - 1) * limit;
+
+        // Obtener los turnos de la base de datos con paginación
+        const turnos = await Turno.find({})
+            .skip(skip)
+            .limit(limit);
+        
+        // Contar el total de documentos para la paginación
+        const totalCount = await Turno.countDocuments();
+
+        // Formatear los turnos
         const formattedTurnos = turnos.map(turno => ({
             ...turno.toObject(),
             hora: turno.hora.toISOString(),
             dia: turno.dia.toISOString(),
         }));
-        return NextResponse.json({ success: true, message: 'API funcionando', data: formattedTurnos });
+
+        return NextResponse.json({
+            success: true,
+            message: 'API funcionando',
+            data: formattedTurnos,
+            totalPages: Math.ceil(totalCount / limit),
+            currentPage: page,
+        });
     } catch (error) {
         return NextResponse.json({ success: false, message: 'Error al obtener los turnos' }, { status: 500 });
     }
