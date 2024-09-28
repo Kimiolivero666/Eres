@@ -20,7 +20,8 @@
     margin-bottom: 4rem;
     font-family: "Zen Kaku Gothic Antique", sans-serif;
     color: var(--verde);
-    font-weight: 300;
+    font-weight: 400;
+    font-size: 22px;
 }
 
 .boton{
