@@ -2,6 +2,8 @@
 
 import { usePathname } from 'next/navigation';
 import MenuNavbar from "@/components/MenuNavbar";
+import Footer from '@/components/Footer';
+
 
 export default function LayoutWrapper({ children }: { children: React.ReactNode }) {
   const pathname = usePathname();
@@ -11,6 +13,8 @@ export default function LayoutWrapper({ children }: { children: React.ReactNode 
     <>
       {!isAdminRoute && <MenuNavbar />}
       {children}
+      {!isAdminRoute && <Footer/>}
+      
     </>
   );
 }

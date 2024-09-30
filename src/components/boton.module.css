@@ -28,5 +28,21 @@
     color: var(--blanco);
   }
 
+/* Nuevos estilos personalizados */
+.buttonBlanco {
+  background-color: var(--blanco);
+}
 
+.textMarron {
+  color: var(--marron);
+}
+
+.buttonBlanco:hover {
+  background-color: transparent;
+  border: 1px solid var(--blanco);
+}
+
+.textMarron:hover {
+  color: var(--blanco);
+}
   

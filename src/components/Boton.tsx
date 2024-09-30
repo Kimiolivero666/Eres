@@ -2,16 +2,16 @@ import React, { FC } from 'react';
 import styles from './boton.module.css';
 import Link from "next/link";
 
-
 interface BotonProps {
   type?: 'button' | 'submit' | 'reset';
   text: string;
-  className?: string;
-  textClassName?: string;
+  className?: string; // Clase adicional para el botón
+  textClassName?: string; // Clase adicional para el texto del botón
   href?: string; // Hacemos que href sea opcional
 }
 
 const Boton: FC<BotonProps> = ({ type = 'button', text, className, textClassName, href }) => {
+  // Combina la clase extra pasada por props con la clase base de estilos del botón
   const buttonClassName = `${className ? `${className} ` : ''}${styles.button}`;
   const textClass = `${textClassName ? `${textClassName} ` : ''}${styles.text}`;
 

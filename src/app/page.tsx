@@ -46,6 +46,24 @@ const HomePage: React.FC = () => {
           text='Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis vitae, temporibus provident necessitatibus eum, fugit officia suscipit dolorum possimus aliquam maxime aut atque voluptates! Fuga fugiat rem amet sit! Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis vitae, temporibus provident necessitatibus eum, fugit officia suscipit Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis vitae, temporibus provident necessitatibus eum, fugit officia suscipitLorem ipsum dolor sit amet consectetur adipisicing elit. Officiis vitae, temporibus provident necessitatibus eum, fugit officia suscipit
     '/>
       </div>
+      <Container>
+   <Row className='no-gutters'>
+   <Col md={7} className={styles.bienvenida}>
+<div >
+  </div>
+</Col>
+     <Col md={5} className=''>
+       <Image 
+       src='/images/Recurso-1.png'
+       width={400}
+       height={500}
+       alt=''
+       className={styles.imagen}
+       />
+     </Col>
+   </Row>
+ </Container>
+
       <div>
         <Tratamiento
           title='corporales'
