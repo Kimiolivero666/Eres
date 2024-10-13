@@ -43,8 +43,14 @@ const AdminHorariosPage = () => {
         try {
             const response = await axios.get('/api/horarios');
             if (response.data.success) {
-                setHorarios(response.data.data);
-                console.log('Horarios fetched:', response.data.data); // Depuración
+                // Ordenar los días dentro de cada horario
+                const sortedHorarios = response.data.data.map((horario: Horario) => ({
+                    ...horario,
+                    dias: horario.dias.sort((a, b) => a.dia - b.dia),
+                }));
+    
+                setHorarios(sortedHorarios);
+                console.log('Horarios fetched:', sortedHorarios); // Depuración
             } else {
                 setAlert({ type: 'danger', message: response.data.message });
             }
@@ -53,6 +59,7 @@ const AdminHorariosPage = () => {
             setAlert({ type: 'danger', message: 'Error al obtener los horarios' });
         }
     };
+    
 
     const handleShowModal = (horario?: Horario, dia?: number) => {
         if (horario) {
@@ -227,7 +234,6 @@ const AdminHorariosPage = () => {
                     <tr>
                         <th>Mes</th>
                         <th>Año</th>
-                        <th>Acciones</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -236,9 +242,6 @@ const AdminHorariosPage = () => {
                             <td>{new Date(horario.año, horario.mes - 1).toLocaleString('default', { month: 'long' })}</td>
                             <td>{horario.año}</td>
                             <td>
-                                <Button variant="warning" size="sm" onClick={() => handleShowModal(horario)}>
-                                    Editar
-                                </Button>{' '}
                                 <Button variant="danger" size="sm" onClick={() => handleDelete(horario._id)}>
                                     Eliminar
                                 </Button>
