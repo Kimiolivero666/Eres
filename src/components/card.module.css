@@ -1,0 +1,66 @@
+.card {
+    width: 400px;
+    margin: 16px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column as column;
+}
+
+.content {
+    padding: '16px',
+}
+
+.contenedorTitulo {
+    position: relative;
+}
+
+.images {
+    height: auto;
+    width: 100%;
+}
+
+.title {
+    position: absolute;
+    top: 15px;
+    left: 80px;
+    font-family: "Zen Kaku Gothic Antique", sans-serif;
+    font-size: 20px;
+    color: var(--gris);
+}
+
+.description {
+    font-family: "Zen Kaku Gothic Antique", sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    color: var(--gris);
+    margin-top: 1rem;
+}
+
+.description2 {
+    font-family: "Zen Kaku Gothic Antique", sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--gris);
+    margin-top: 1rem;
+}
+
+
+
+.cajaTiempo{
+    display: flex;
+    width: 150px;
+    border-right: 2px solid var(--verdeClaro);
+}
+
+.imagesTiempo{
+    height: 30px;
+    width: 30px;
+    margin-top: 5px;
+}
+.minutos{
+    font-family: "Zen Kaku Gothic Antique", sans-serif;
+    font-size: 22px;
+    font-weight: 600;
+    color: var(--gris);
+    margin-left: 1rem;
+}
