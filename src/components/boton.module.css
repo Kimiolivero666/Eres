@@ -45,4 +45,18 @@
 .textMarron:hover {
   color: var(--blanco);
 }
+
+/* Nuevos estilos personalizados */
+
+.buttonRosado{
+  background-color: var(--rosado);
+}
+
+.buttonRosado:hover {
+background-color: var(--rosadoHover);
+ }
+ 
+.textBlanco{
+  color: var(--blanco);
+}
   

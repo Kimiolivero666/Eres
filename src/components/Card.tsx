@@ -1,6 +1,8 @@
 import React from 'react';
 import styles from "./card.module.css";
 import Image from 'next/image';
+import Boton from './Boton';
+import botonStyles from './boton.module.css'
 
 interface CardProps {
     title: string;
@@ -28,7 +30,7 @@ const Card: React.FC<CardProps> = ({ title, description, description2, minutos }
                 <p className={styles.description}>{description}</p>
                 <p className={styles.description2}>{description2}</p>
             </div >
-            <div className={styles.contenidoTiempo}>
+            <div className={styles.contenedorAbajo}>
                 <div className={styles.cajaTiempo}>
                     <Image
                         className={styles.imagesTiempo}
@@ -37,6 +39,13 @@ const Card: React.FC<CardProps> = ({ title, description, description2, minutos }
                         height={500}
                         alt='' />
                         <p className={styles.minutos}>{minutos}</p>
+                </div>
+                <div className={styles.contenedorPrecio}>
+                    <p className={styles.precio}>58€</p>
+                    <Boton text='Reservar'
+                    className={botonStyles.buttonRosado} 
+                    textClassName={botonStyles.textBlanco}
+                                  />
                 </div>
             </div>
             </div>

@@ -44,7 +44,10 @@
     margin-top: 1rem;
 }
 
-
+.contenedorAbajo{
+    display: flex;
+    align-items: center;
+}
 
 .cajaTiempo{
     display: flex;
@@ -55,7 +58,7 @@
 .imagesTiempo{
     height: 30px;
     width: 30px;
-    margin-top: 5px;
+    margin-top: 20px;
 }
 .minutos{
     font-family: "Zen Kaku Gothic Antique", sans-serif;
@@ -63,4 +66,19 @@
     font-weight: 600;
     color: var(--gris);
     margin-left: 1rem;
+    margin-top: 15px;
+}
+
+.contenedorPrecio{
+    display: flex;
+    align-items: center;
+}
+.precio{
+    font-family: "Zen Kaku Gothic Antique", sans-serif;
+    font-size: 22px;
+    font-weight: 600;
+    color: var(--gris);
+    margin-left: 2rem;
+    margin-right: 2rem;
+    margin-top: 15px;
 }
