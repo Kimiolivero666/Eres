@@ -32,8 +32,9 @@ const HomePage: React.FC = () => {
             </Col>
             <Col md={7} className={styles.bienvenida}>
             <div >
-              <h3 className={styles.titulo}>Bienvenido a <span className={styles.span}>Eres</span></h3>
-              <p className={styles.parrafo}>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam molestias, facilis dicta optio cum alias natus quod tempore expedita amet non quisquam odio culpa beatae nemo iste deserunt? Mollitia laborum tempore, reprehenderit iusto sunt possimus obcaecati! Deserunt provident nihil officiis doloremque, dolor quibusdam impedit. Fugit vel ducimus dolore nisi iste.</p>
+              <h3 className={styles.titulo}>Eres <span className={styles.span}>Wellness & Kosmetik</span></h3>
+              <p className={styles.parrafo}>Un espacio pensado para tu bienestar, desde un enfoque holístico y profesional.
+              </p>
               </div>
             </Col>
           </Row>
@@ -43,8 +44,10 @@ const HomePage: React.FC = () => {
         <Tratamiento
           title='faciales'
           img='/images/img-1.jpg'
-          text='Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis vitae, temporibus provident necessitatibus eum, fugit officia suscipit dolorum possimus aliquam maxime aut atque voluptates! Fuga fugiat rem amet sit! Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis vitae, temporibus provident necessitatibus eum, fugit officia suscipit Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis vitae, temporibus provident necessitatibus eum, fugit officia suscipitLorem ipsum dolor sit amet consectetur adipisicing elit. Officiis vitae, temporibus provident necessitatibus eum, fugit officia suscipit
-    '/>
+          text='Cada piel es diferente y tiene necesidades particulares, por lo que el asesoramiento individualizado 
+forma parte de nuestros tratamientos y servicios desde la primera consulta. Estaremos encantados de 
+apoyarlo para encontrar juntos el balance correcto para su piel en el salón como también con productos 
+para su uso en casa, de esta forma mejorar el aspecto de su piel y su hidratación.'/>
       </div>
       <Container>
    <Row className='no-gutters'>
@@ -68,11 +71,8 @@ const HomePage: React.FC = () => {
         <Tratamiento
           title='corporales'
           img='/images/img-2.jpg'
-          text='Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis vitae, temporibus provident necessitatibus eum, fugit officia suscipit 
-dolorum possimus aliquam maxime aut atque voluptates! Fuga fugiat rem amet sit! Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis
-vitae, temporibus provident necessitatibus eum, fugit officia suscipit Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis vitae, 
-temporibus provident necessitatibus eum, fugit officia suscipitLorem ipsum dolor sit amet consectetur adipisicing elit. Officiis vitae, 
-temporibus provident necessitatibus eum, fugit officia suscipit
+          text='Experimente una profunda relajación, alivio de tensiones y descanso a través de nuestros masajes. 
+Permítase una pausa para reconectar con la calma y dejar ir el estrés del día a día.
  '/>
       </div>
     </>
